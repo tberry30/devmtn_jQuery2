@@ -36,7 +36,8 @@ $(document).ready(function(){
 
 			$('#newList').append('<a href="#finish" class="" id="item"><li class="list-group-item">' + task.task + '<span class="arrow pull-right"><i class="glyphicon glyphicon-arrow-right"></span></li></a>');
 		}
-		$('#newTaskForm,  #newListItem').fadeToggle('fast', 'linear');
+		$('#newListItem').css('display', 'none');
+        $('#newTaskForm').css('display', 'block');
 	};
 
 
@@ -49,12 +50,14 @@ $(document).ready(function(){
 
     //Opens form
     $('#newListItem').on('click', function () {
-        $('#newTaskForm,  #newListItem').fadeToggle('fast', 'linear');
+        $('#newListItem').css('display', 'none');
+        $('#newTaskForm').css('display', 'block');
     });
     //closes form
     $('#cancel').on('click', function (e) {
         e.preventDefault();
-        $('#newTaskForm,  #newListItem').fadeToggle('fast', 'linear');
+        $('#newListItem').css('display', 'block');
+        $('#newTaskForm').css('display', 'none');
     });
 
 

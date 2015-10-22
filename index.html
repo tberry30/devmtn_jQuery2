@@ -6,28 +6,28 @@
 </head>
 <body>
 	<div class='new-item-header'>
-		<button href="#" class="pull-right pencil" id="newListItem" style="">New</button>
+		<button href="#" class="pull-right pencil" id="newListItem" style="display: block;">New</button>
 	</div>
 
-	<form id="newTaskForm">
-    	<label>New Item</label>
-        <input id="newItemInput" placeholder="new task">
+	<form id="newTaskForm" style="display: none;">
+        <input id="newItemInput" placeholder="Add new task...">
         <button id="saveNewItem">Save</button>
         <button id="cancel">Cancel</button>
     </form>
 
-    <div id="newList">
+    <div class="panel">
 		New List
+		<ul class="list-group" id="newList"></ul>
 	</div>
 
 	<div class="panel">
-            In Progress
-            <ul class="list-group" id="currentList"></ul>
+        In Progress
+        <ul class="list-group" id="currentList"></ul>
     </div>
 
     <div class="panel">
-            Archived
-            <ul class="list-group" id="archivedList"></ul>
+        Archived
+        <ul class="list-group" id="archivedList"></ul>
     </div>
 
 

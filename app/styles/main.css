@@ -1,4 +1,26 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #D9D9D9;
+	margin: 30px;
+}
+
 .panel {
-	display: inline-block;
-	width: 33%;
+	margin-top: 20px;
+	display: block;
+	width: 25%;
+	height: 300px;
+	float: left;
+}
+
+.panel a {
+	color: black;
+	text-decoration: none;
+}
+
+ul.list-group {
+	padding-left: 20px;
 }
