@@ -95,7 +95,7 @@ h5 {
 }
 
 ul#newList > a > li {
-	background-color: rgb(192,0,0);
+	background-color: rgba(192,0,0,0.5);
 }
 ul#currentList > a > li {
 	color: #111111;
@@ -104,4 +104,16 @@ ul#currentList > a > li {
 ul#archivedList > a > li {
 	color: #111111;
 	background-color: rgba(168,168,168,0.5);
+}
+
+ul#newList > a > li:hover {
+	background-color: rgba(192,0,0,0.7);
+}
+ul#currentList > a > li:hover {
+	color: #111111;
+	background-color: rgba(0,192,0,0.7);
+}
+ul#archivedList > a > li:hover {
+	color: #111111;
+	background-color: rgba(168,168,168,0.7);
 }
