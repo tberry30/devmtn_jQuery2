@@ -2,31 +2,35 @@
 <html>
 <head>
 	<title>Listo</title>
+	<link rel="stylesheet" href="app/styles/reset.css">
 	<link rel="stylesheet" href="app/styles/main.css">
 </head>
 <body>
 	<div class='new-item-header'>
-		<button href="#" class="pull-right pencil" id="newListItem" style="display: block;">New</button>
-	</div>
+	<h1>&lt;&nbsp;toDo&nbsp;/&gt;</h1>
 
-	<form id="newTaskForm" style="display: none;">
-        <input id="newItemInput" placeholder="Add new task...">
-        <button id="saveNewItem">Save</button>
-        <button id="cancel">Cancel</button>
-    </form>
+		<div href="#" class="pull-right pencil" id="newListItem" style="display: block;">Add Task</div>
+	
+		<form id="newTaskForm" style="display: none;">
+	        <input id="newItemInput" placeholder="Add new task...">
+	        <br>
+	        <div id="saveNewItem">Save</div>
+	        <div id="cancel">Cancel</div>
+	    </form>
+    </div>
 
     <div class="panel">
-		New List
+		<h5>New List</h5>
 		<ul class="list-group" id="newList"></ul>
 	</div>
 
 	<div class="panel">
-        In Progress
+        <h5>In Progress</h5>
         <ul class="list-group" id="currentList"></ul>
     </div>
 
     <div class="panel">
-        Archived
+        <h5>Archived</h5>
         <ul class="list-group" id="archivedList"></ul>
     </div>
 
